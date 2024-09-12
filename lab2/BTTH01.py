@@ -44,6 +44,9 @@ print(f"Accuracy: {accuracy}")
 print(f"Confusion Matrix:\n{confusion_matrix(y_test[0:8], pred_7)}")
 print(f"Classification Report:\n{classification_report(y_test[0:8], pred_7)}")
 
+print(y_test[0:8].to_numpy().flatten())
+print(pred_7)
+
 model = GaussianNB()
 model.fit(X_train, y_train)
 
